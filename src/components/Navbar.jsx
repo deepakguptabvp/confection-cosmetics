@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
-import { FaShoppingCart } from "react-icons/fa";
 import Image from "next/image";
+import { FaShoppingCart } from "react-icons/fa";
 
 const Navbar = () => {
   return (

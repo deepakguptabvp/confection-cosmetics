@@ -213,7 +213,7 @@ const Footer = () => {
                     fill="currentColor"
                     stroke-linecap="round"
                     stroke-linejoin="round"
-                    stroke-width="2"
+                    strokeWidth="2"
                     className="w-5 h-5"
                     viewBox="0 0 22 22"
                     xmlns="http://www.w3.org/2000/svg"
@@ -236,7 +236,7 @@ const Footer = () => {
                     fill="currentColor"
                     stroke-linecap="round"
                     stroke-linejoin="round"
-                    stroke-width="2"
+                    strokeWidth="2"
                     className="w-5 h-5"
                     viewBox="0 0 500 500"
                   >
@@ -258,7 +258,7 @@ const Footer = () => {
                     fill="currentColor"
                     stroke-linecap="round"
                     stroke-linejoin="round"
-                    stroke-width="2"
+                    strokeWidth="2"
                     className="w-5 h-5"
                     viewBox="0 0 22 22"
                   >
@@ -281,7 +281,7 @@ const Footer = () => {
                     fill="currentColor"
                     stroke-linecap="round"
                     stroke-linejoin="round"
-                    stroke-width="2"
+                    strokeWidth="2"
                     className="w-5 h-5"
                   >
                     <path
@@ -315,7 +315,7 @@ export default Footer;
                 stroke="currentColor"
                 stroke-linecap="round"
                 stroke-linejoin="round"
-                stroke-width="2"
+                strokeWidth="2"
                 className="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full"
                 viewBox="0 0 24 24"
               >
@@ -459,7 +459,7 @@ export default Footer;
                   fill="currentColor"
                   stroke-linecap="round"
                   stroke-linejoin="round"
-                  stroke-width="2"
+                  strokeWidth="2"
                   className="w-5 h-5"
                   viewBox="0 0 24 24"
                 >
@@ -471,7 +471,7 @@ export default Footer;
                   fill="currentColor"
                   stroke-linecap="round"
                   stroke-linejoin="round"
-                  stroke-width="2"
+                  strokeWidth="2"
                   className="w-5 h-5"
                   viewBox="0 0 24 24"
                 >
@@ -484,7 +484,7 @@ export default Footer;
                   stroke="currentColor"
                   stroke-linecap="round"
                   stroke-linejoin="round"
-                  stroke-width="2"
+                  strokeWidth="2"
                   className="w-5 h-5"
                   viewBox="0 0 24 24"
                 >
@@ -498,7 +498,7 @@ export default Footer;
                   stroke="currentColor"
                   stroke-linecap="round"
                   stroke-linejoin="round"
-                  stroke-width="0"
+                  strokeWidth="0"
                   className="w-5 h-5"
                   viewBox="0 0 24 24"
                 >
