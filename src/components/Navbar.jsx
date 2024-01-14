@@ -1,11 +1,11 @@
-import Link from "next/link";
 import React from "react";
+import Link from "next/link";
 import { FaShoppingCart } from "react-icons/fa";
 
 const Navbar = () => {
   return (
     <div>
-      <nav className="bg-white border-gray-200 dark:bg-gray-900">
+      <nav className="bg-white border-gray-200 dark:bg-gray-900 shadow-md">
         <div className="flex flex-col md:flex-row flex-wrap gap-4 justify-between items-center mx-auto max-w-screen-xl p-2">
           <Link
             href="/"
@@ -27,7 +27,7 @@ const Navbar = () => {
                 <ul className="flex flex-row font-medium mt-0 space-x-8 rtl:space-x-reverse text-sm">
                   <li>
                     <Link
-                      href="/"
+                      href="/confectionery"
                       className="text-gray-900 dark:text-white hover:underline"
                       aria-current="page"
                     >
@@ -35,8 +35,9 @@ const Navbar = () => {
                     </Link>
                   </li>
                   <li>
+                    {" "}
                     <Link
-                      href="/blog"
+                      href="/cosmetics"
                       className="text-gray-900 dark:text-white hover:underline"
                     >
                       Cosmetics
@@ -64,69 +65,115 @@ const Navbar = () => {
           </div>
 
           <div className="flex items-center space-x-6 rtl:space-x-reverse">
-            <a
+            <button>
+              <FaShoppingCart className="text-xl md:text-2xl" />
+            </button>
+            <Link
               href="tel:5541251234"
               className="text-sm  text-gray-500 dark:text-white hover:underline"
             >
               (555) 412-1234
-            </a>
-            <a
+            </Link>
+            <Link
               href="#"
-              className="text-sm  text-blue-600 dark:text-blue-500 hover:underline"
+              className="text-lg text-blue-600 dark:text-blue-500 hover:underline"
             >
               Login
-            </a>
-
-            <button>
-              <FaShoppingCart className="text-xl md:text-2xl mr-4" />
-            </button>
+            </Link>
           </div>
         </div>
       </nav>
 
       {/* Navbar menu Home/About/contact.... */}
-      {/* <div className="bg-gray-50 dark:bg-gray-700">
-        <div className="max-w-screen-xl p-3 text-center bg-slate-500 mx-auto">
-          <div className="flex justify-between text-center">
-            <ul className="flex flex-row font-medium mt-0 space-x-8 rtl:space-x-reverse text-sm">
+      <div className="bg-gray-50 dark:bg-gray-700">
+        <div className="max-w-screen-xl p-3 flex md:flex-row flex-wrap justify-between bg-slate-300 mx-auto">
+          <div className="flex justify-between">
+            <ul className="flex flex-wrap item-center justify-between font-medium mt-0 space-x-8 rtl:space-x-reverse text-sm">
               <li>
-                <a
-                  href="#"
+                <Link
+                  href="/confectionery/coffee"
                   className="text-gray-900 dark:text-white hover:underline"
                   aria-current="page"
                 >
-                  Home
-                </a>
+                  Coffee
+                </Link>
               </li>
               <li>
-                <a
-                  href="#"
+                <Link
+                  href="/confectionery/bournvita"
                   className="text-gray-900 dark:text-white hover:underline"
                 >
-                  Company
-                </a>
+                  Bournvita
+                </Link>
               </li>
               <li>
-                <a
-                  href="#"
+                <Link
+                  href="/confectionery/lactogen"
                   className="text-gray-900 dark:text-white hover:underline"
                 >
-                  Team
-                </a>
+                  Lactogen
+                </Link>
               </li>
               <li>
-                <a
-                  href="#"
+                <Link
+                  href="/confectionery/cerelac"
                   className="text-gray-900 dark:text-white hover:underline"
                 >
-                  Features
-                </a>
+                  Cerelac
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/confectionery/nan-pro"
+                  className="text-gray-900 dark:text-white hover:underline"
+                >
+                  Nan-Pro
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/confectionery/dove"
+                  className="text-gray-900 dark:text-white hover:underline"
+                >
+                  Dove
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/confectionery/loreal"
+                  className="text-gray-900 dark:text-white hover:underline"
+                >
+                  Loreal
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/confectionery/lotus"
+                  className="text-gray-900 dark:text-white hover:underline"
+                >
+                  Lotus
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/confectionery/garnier"
+                  className="text-gray-900 dark:text-white hover:underline"
+                >
+                  Garnier
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/confectionery/indulekha"
+                  className="text-gray-900 dark:text-white hover:underline"
+                >
+                  Indulekha
+                </Link>
               </li>
             </ul>
           </div>
         </div>
-      </div> */}
-
+      </div>
     </div>
   );
 };
