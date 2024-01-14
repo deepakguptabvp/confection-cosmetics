@@ -91,9 +91,9 @@ const Navbar = () => {
 
       {/* Navbar menu Home/About/contact.... */}
       <div className="bg-gray-50 dark:bg-gray-700">
-        <div className="max-w-screen-xl p-3 flex md:flex-row flex-wrap justify-between bg-slate-300 mx-auto">
-          <div className="flex justify-between">
-            <ul className="flex flex-wrap item-center justify-between font-medium mt-0 space-x-8 rtl:space-x-reverse text-sm">
+        <div className="max-w-screen-xl p-3 flex md:flex-row flex-wrap justify-center bg-slate-300 mx-auto">
+          <div className="flex justify-center">
+            <ul className="flex flex-wrap gap-10 font-medium mt-0 text-sm">
               <li>
                 <Link
                   href="/confectionery/coffee"
