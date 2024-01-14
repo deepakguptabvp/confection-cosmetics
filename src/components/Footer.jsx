@@ -1,4 +1,5 @@
 // import a from 'next/a'
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
@@ -10,12 +11,16 @@ const Footer = () => {
         <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
           <div className="md:flex md:justify-between">
             <div className="mb-6 md:mb-0">
-              <Link href="/" className="flex items-center">
-                <img
-                  src="/company-logo.png"
-                  className="h-16 rounded-full me-3"
-                  alt="Company Logo"
-                />
+              <Link href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
+              <div className="w-12 h-12 overflow-hidden rounded-full">
+              <Image
+                className="w-full h-full object-cover mr-2"
+                src="/company-logo.png"
+                alt="Your Alt Text"
+                width={200}
+                height={200}
+              />
+            </div>
                 <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
                   Confection-Cosmetics
                 </span>

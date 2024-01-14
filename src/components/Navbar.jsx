@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import { FaShoppingCart } from "react-icons/fa";
+import Image from "next/image";
 
 const Navbar = () => {
   return (
@@ -11,11 +12,15 @@ const Navbar = () => {
             href="/"
             className="flex items-center space-x-3 rtl:space-x-reverse"
           >
-            <img
-              src="/company-logo.png"
-              className="h-11 rounded-full"
-              alt="Confection-Cosmetics"
-            />
+            <div className="w-12 h-12 overflow-hidden rounded-full">
+              <Image
+                className="w-full h-full object-cover"
+                src="/company-logo.png"
+                alt="Your Alt Text"
+                width={200}
+                height={200}
+              />
+            </div>
             <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
               Confection-Cosmetics
             </span>
