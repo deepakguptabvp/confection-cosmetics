@@ -1,28 +1,28 @@
-
-import React from "react";
+'use client'
+import React, { useRef } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { IoCloseCircle } from "react-icons/io5";
 
-const handleCheckout = () => {
-  // Implement your checkout logic here
-  console.log('Checkout clicked!');
-};
 
-const Navbar = ({ items, onClose, onCheckout }) => {
+const Navbar = () => {
+
+  const handleCheckout = () => {
+    console.log('Checkout clicked!');
+  };
 
   const handleCartToggle = () => {
-    if(ref.current.classList.contains('translate-x-full')){
+    if (ref.current.classList.contains('translate-x-full')) {
       ref.current.classList.remove('translate-x-full')
       ref.current.classList.add('translate-x-0')
-    } 
-    else if (!ref.current.classList.contains('translate-x-full')){
+    }
+    else if (!ref.current.classList.contains('translate-x-full')) {
       ref.current.classList.remove('translate-x-0')
       ref.current.classList.add('translate-x-full')
     }
-    
   };
 
-
+  const ref = useRef();
   return (
     <div>
       <nav className="bg-white border-gray-200 dark:bg-stone-500 shadow-md">
@@ -88,52 +88,11 @@ const Navbar = ({ items, onClose, onCheckout }) => {
                   </button>
                 </div>
               </form>
-
-              {/* <ul className="flex flex-row font-medium mt-0 space-x-8 rtl:space-x-reverse text-sm">
-                  <li>
-                    <Link
-                      href="/confectionery"
-                      className="text-gray-900 dark:text-white hover:underline"
-                      aria-current="page"
-                    >
-                      Confectionery
-                    </Link>
-                  </li>
-                  <li>
-                    {" "}
-                    <Link
-                      href="/cosmetics"
-                      className="text-gray-900 dark:text-white hover:underline"
-                    >
-                      Cosmetics
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/about"
-                      className="text-gray-900 dark:text-white hover:underline"
-                    >
-                      About
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/contact"
-                      className="text-gray-900 dark:text-white hover:underline"
-                    >
-                      Contact
-                    </Link>
-                  </li>
-                </ul> */}
             </div>
           </div>
-          {/* </div> */}
+   
 
           <div className="flex items-center space-x-6 rtl:space-x-reverse mr-3">
-            {/* <button>
-              <FaShoppingCart className="text-xl md:text-2xl dark:text-white" />
-            </button> */}
-
             <Link
               href="/"
               className="text-lg text-stone-900  dark:invert hover:underline"
@@ -141,9 +100,10 @@ const Navbar = ({ items, onClose, onCheckout }) => {
               Login
             </Link>
 
-            <button 
+            <button
+            
               type="button"
-              className="text-white bg-stone-700  hover:bg-stone-800 focus:ring-4 focus:outline-none focus:ring-stone-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center me-2 dark:bg-stone-400 dark:hover:bg-stone-700 dark:focus:ring-stone-400"
+              className="text-white bg-stone-700 hover:bg-stone-800 focus:ring-4 focus:outline-none focus:ring-stone-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center me-2 dark:bg-stone-400 dark:hover:bg-stone-700 dark:focus:ring-stone-400"
             >
               <svg
                 className="w-3.5 h-3.5 me-2"
@@ -156,40 +116,11 @@ const Navbar = ({ items, onClose, onCheckout }) => {
               </svg>
               Cart
             </button>
-
-          
-
-            {/* <div
-              id="cart"
-              class="fixed inset-y-0 right-0 flex items-center justify-center w-0 h-full overflow-hidden bg-gray-800 bg-opacity-50 z-50 transition-transform transform translate-x-full"
-            >
-              <!-- Cart content goes here -->
-              <div class="bg-white p-8 w-96">
-                <h2 class="text-2xl font-semibold mb-4">Shopping Cart</h2>
-                <!-- Cart items go here -->
-                <ul id="cart-items" class="divide-y divide-gray-300"></ul>
-                <div class="mt-6 flex justify-end">
-                  <button
-                    id="checkout-btn"
-                    class="bg-blue-500 text-white px-4 py-2 rounded"
-                  >
-                    Checkout
-                  </button>
-                </div>
-              </div>
-            </div> */}
-
-            {/* <Link
-              href="tel:5541251234"
-              className="text-sm  text-gray-500 dark:text-white hover:underline"
-            >
-              (555) 412-1234
-            </Link> */}
           </div>
         </div>
       </nav>
 
-      {/* Navbar menu Home/About/contact.... */}
+      {/* Navbar menu --> Home/About/contact.... */}
       <div className="bg-stone-300 shadow-md dark:bg-stone-500">
         <div className="max-w-screen-xl p-3 flex md:flex-row flex-wrap justify-center  dark:bg-stone-700 mx-auto">
           <div className="flex justify-center">
